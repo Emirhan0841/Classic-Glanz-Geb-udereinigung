@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Container } from '../ui/Container';
+import { Button } from '../ui/Button';
+import { company } from '../../data/company';
+export const Hero = () => {
+    return (_jsx("section", { id: "home", className: "relative overflow-hidden bg-white", children: _jsxs(Container, { className: "grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-48 md:gap-64 items-center py-48 md:py-64", children: [_jsxs("div", { className: "flex flex-col justify-center", children: [_jsx("h1", { className: "font-display font-semibold text-navy leading-tight mb-24", style: { fontSize: 'clamp(2rem, 5vw, 3.5rem)' }, children: "Professionelle Geb\u00E4udereinigung" }), _jsx("p", { className: "text-base md:text-lg text-foreground mb-24 leading-relaxed max-w-lg", children: company.description }), _jsxs("div", { className: "flex flex-col sm:flex-row gap-12 max-w-sm", children: [_jsx(Button, { variant: "primary", size: "lg", children: "Angebot anfragen" }), _jsx(Button, { variant: "outline", size: "lg", children: "Leistungen" })] })] }), _jsx("div", { className: "relative w-full aspect-square md:aspect-auto md:h-[500px] bg-muted rounded-lg overflow-hidden border border-tuerkis/10", children: _jsx("img", { src: "/classic-glanz-images/hero/hero-office-cleaning.webp", alt: "Professionelle B\u00FCroreinigung mit modernem Foyer", className: "w-full h-full object-cover object-center", loading: "eager" }) })] }) }));
+};

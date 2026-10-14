@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--cg-font-text);
+  }
+
+  h1, h2 {
+    font-family: var(--cg-font-display);
+    @apply font-semibold leading-tight text-navy;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl mb-24;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl mb-24;
+  }
+
+  h3, h4, h5, h6 {
+    @apply font-semibold leading-tight text-navy mb-16;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  a {
+    @apply text-petrol transition-colors duration-200;
+    &:hover {
+      @apply text-navy;
+    }
+    &:focus-visible {
+      @apply outline-none ring-4 ring-tuerkis ring-offset-2;
+    }
+  }
+
+  button {
+    &:focus-visible {
+      @apply outline-none ring-4 ring-tuerkis ring-offset-2;
+    }
+  }
+
+  input, textarea, select {
+    &:focus-visible {
+      @apply outline-none ring-4 ring-tuerkis ring-offset-2;
+    }
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-full max-w-7xl mx-auto px-24 md:px-96;
+  }
+
+  .section-spacing {
+    @apply py-48 md:py-80;
+  }
+
+  .section-alt {
+    @apply bg-muted;
+  }
+
+  .subline {
+    @apply text-petrol font-normal text-sm uppercase tracking-widest mb-8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

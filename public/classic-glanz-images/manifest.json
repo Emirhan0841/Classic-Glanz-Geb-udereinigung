@@ -1,0 +1,132 @@
+{
+  "images": [
+    {
+      "path": "hero/hero-office-cleaning.webp",
+      "source": "professionelle_reinigung_im_modernen_bürofoyer.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1672x941",
+      "sha256": "2c6e6f698ee3602e264cbd3e1fca6c9e22047930b368939d4ccc19349eb77682"
+    },
+    {
+      "path": "hero/hero-glass-facade.webp",
+      "source": "professionelle_fensterreinigung_am_glasgebäude.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1672x941",
+      "sha256": "40b3eea368d4ce6ea50598bc442bfd9b0dcda04897c8ad9f54f1697d43c09cf7"
+    },
+    {
+      "path": "services/service-building-cleaning.webp",
+      "source": "professionelle_reinigung_in_der_modernen_lobby.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1448x1086",
+      "sha256": "329e6c129abfe5cb9990504321a578e114f8e39d0a0172bdad0cf9efe8bb4a75"
+    },
+    {
+      "path": "services/service-window-cleaning.webp",
+      "source": "professionelle_glasreinigung_am_modernen_bürogebäu.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1448x1086",
+      "sha256": "b2980e06a94b9cbbd9ed06dc23675486665a3ce58001115a8ca6bfb598efa9c4"
+    },
+    {
+      "path": "services/service-deep-cleaning.webp",
+      "source": "professionelle_büroreinigung_mit_scheuersaugmaschi.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1448x1086",
+      "sha256": "3c4f8a7d7fd256ac044c595adccf88189a5d190aac402ae87274ba3ec4e39f58"
+    },
+    {
+      "path": "services/service-maintenance-cleaning.webp",
+      "source": "professionelle_büroreinigung_im_tageslicht.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1448x1086",
+      "sha256": "768f02074b0488411d9c1dac32737b58b705f7f7464d01003b632527d094948c"
+    },
+    {
+      "path": "services/service-pressure-washing.webp",
+      "source": "professionelle_terrassenreinigung_am_bürogebäude.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1448x1086",
+      "sha256": "4aa4d53c7efa7fcc6036ebf13c697af03c03a2a4ce013d133bef0e930c611349"
+    },
+    {
+      "path": "services/service-winter-service.webp",
+      "source": "professionelle_winterdienst_crew_am_bürogebäude.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1448x1086",
+      "sha256": "ae11f61e1cea916cfdf46ccb78f8b88f00958ebd65f20ff51fd8a571dadfecf2"
+    },
+    {
+      "path": "about/about-team.webp",
+      "source": "professionelles_reinigungsteam_im_modernen_büro.png",
+      "source_type": "standalone_generated_image",
+      "resolution": "1448x1086",
+      "sha256": "a982443cc29770251b7d60bb45f68fac5d43c796afefdcdcb0832fe9eb5b1cd7"
+    },
+    {
+      "path": "about/about-teamwork.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "244x277",
+      "sha256": "a661be0bda469b424351d83ae45d03c158b56aa5ef6ed05faf16c7d482246ef0"
+    },
+    {
+      "path": "hero/hero-commercial-building.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "245x277",
+      "sha256": "f274bc65f96f5ed9ad0a04652980ced739ccfca5ea1b6056eb78ebeb1ebe07bc"
+    },
+    {
+      "path": "about/about-equipment.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "245x277",
+      "sha256": "b8c060862a17636f1a8ac98f1c25d146c45efdeb2807b4817813c5dd95fcc546"
+    },
+    {
+      "path": "general/detail-glass-cleaning.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "246x287",
+      "sha256": "f11521a844385956393b8a30edd20bb97599d0d3a67e12bd76cd016d509ac615"
+    },
+    {
+      "path": "general/clean-office-result.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "246x287",
+      "sha256": "5eb880bf56f220c891332b0b5482d6254945716fc93be9988dd70901f8db25e3"
+    },
+    {
+      "path": "general/stairs-and-hallways.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "246x287",
+      "sha256": "285ad0fa03bd0aeb447e54fd1c9faa96c26ab5d7bdcb6f3adb25a5aa1e653c52"
+    },
+    {
+      "path": "general/sanitary-cleaning.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "248x287",
+      "sha256": "faac69ff06c822d455eef947967161bbddf2f0bcd516b55f28de33617ca5d598"
+    },
+    {
+      "path": "general/floor-cleaning-detail.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "246x287",
+      "sha256": "9c2750a0747269e5e957c51648256d8d8bdfdb9d70099459042c0f7bacc0902e"
+    },
+    {
+      "path": "general/contact-cleaner.webp",
+      "source": "a_large_collage_thumbnail_grid_image_a_clean_edit.png",
+      "source_type": "contact_sheet_crop",
+      "resolution": "244x287",
+      "sha256": "edc10fbaf1586dcff910b6823b8d590c17a8f2246c05a3376e76d12976a92648"
+    }
+  ],
+  "standalone_count": 9,
+  "crop_count": 9
+}
