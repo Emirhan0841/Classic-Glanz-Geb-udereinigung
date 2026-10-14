@@ -31,3 +31,8 @@ dist-ssr
 # Netlify & lokale Claude-Einstellungen
 .netlify
 .claude/
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/

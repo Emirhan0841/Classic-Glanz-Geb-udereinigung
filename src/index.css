@@ -5,6 +5,19 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Sticky Header (ca. 50–60 px) darf Abschnittsüberschriften bei Anker-Sprüngen nicht verdecken */
+    scroll-padding-top: 4.5rem;
+  }
+
+  /* Lange Wörter in Überschriften dürfen umbrechen; Silbentrennung nur auf Mobile */
+  h1, h2, h3, h4 {
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 767px) {
+    h1, h2, h3 {
+      hyphens: auto;
+    }
   }
 
   body {
@@ -14,7 +27,7 @@
 
   h1, h2 {
     font-family: var(--cg-font-display);
-    @apply font-semibold leading-tight text-navy;
+    @apply font-semibold leading-tight text-navy break-words;
     text-transform: uppercase;
     letter-spacing: 0.04em;
   }

@@ -31,7 +31,7 @@ export const Process: React.FC = () => {
       <Container className="section-spacing">
         <div className="mb-64">
           <span className="subline">Ablauf</span>
-          <h2 className="font-display text-4xl md:text-5xl text-navy mb-16">
+          <h2 className="font-display text-3xl md:text-5xl text-navy mb-16">
             So funktioniert's
           </h2>
           <p className="text-base text-foreground max-w-2xl">
@@ -43,7 +43,7 @@ export const Process: React.FC = () => {
           {steps.map((step, index) => (
             <div key={step.number}>
               <div className="mb-24">
-                <div className="inline-flex items-center justify-center w-56 h-56 rounded-md bg-navy text-white font-semibold text-2xl mb-16">
+                <div className="inline-flex items-center justify-center w-48 h-48 lg:w-56 lg:h-56 rounded-md bg-navy text-white font-semibold text-2xl mb-16">
                   {step.number}
                 </div>
                 <h3 className="font-semibold text-lg text-navy mb-12">

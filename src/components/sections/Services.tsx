@@ -17,7 +17,7 @@ export const Services: React.FC = () => {
       <Container className="section-spacing">
         <div className="mb-64">
           <span className="subline">Leistungen</span>
-          <h2 className="font-display text-4xl md:text-5xl text-navy mb-16">
+          <h2 className="font-display text-3xl md:text-5xl text-navy mb-16">
             Unsere Services
           </h2>
           <p className="text-base text-foreground max-w-2xl">
@@ -35,7 +35,7 @@ export const Services: React.FC = () => {
               <div className="flex gap-24 items-start">
                 {/* Service Image */}
                 <div className="flex-shrink-0">
-                  <div className="w-56 h-56 rounded-md overflow-hidden bg-muted">
+                  <div className="w-80 h-80 md:w-40 md:h-40 lg:w-56 lg:h-56 rounded-md overflow-hidden bg-muted">
                     <img
                       src={serviceImages[service.id]}
                       alt={service.title}
@@ -46,8 +46,8 @@ export const Services: React.FC = () => {
                 </div>
 
                 {/* Service Text */}
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold mb-8 text-navy group-hover:text-petrol transition-colors">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-semibold mb-8 text-navy group-hover:text-petrol transition-colors break-words">
                     {service.title}
                   </h3>
                   <p className="text-sm md:text-base text-foreground leading-relaxed">

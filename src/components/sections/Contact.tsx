@@ -70,7 +70,7 @@ export const Contact: React.FC = () => {
       <Container className="section-spacing">
         <div className="max-w-2xl">
           <span className="subline">Kontakt</span>
-          <h2 className="font-display text-4xl md:text-5xl text-navy font-semibold mb-16">
+          <h2 className="font-display text-3xl md:text-5xl text-navy font-semibold mb-16">
             Kontaktformular
           </h2>
           <p className="text-base text-foreground mb-48">
@@ -98,7 +98,7 @@ export const Contact: React.FC = () => {
             {/* Company */}
             <div>
               <label htmlFor="company" className="block text-sm font-medium text-navy mb-8">
-                Unternehmen <span className="text-muted-foreground">(optional)</span>
+                Unternehmen <span className="text-foreground">(optional)</span>
               </label>
               <input
                 type="text"

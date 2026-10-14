@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from '../ui/Container'
+import { Link } from 'react-router-dom'
 import { company } from '../../data/company'
 
 export const Footer: React.FC = () => {
@@ -30,10 +31,9 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold text-sm mb-16 text-white">Navigation</h4>
             <ul className="space-y-8 text-sm">
-              <li><a href="#services" className="text-white/75 hover:text-tuerkis transition-colors">Leistungen</a></li>
-              <li><a href="#about" className="text-white/75 hover:text-tuerkis transition-colors">Über uns</a></li>
-              <li><a href="#contact" className="text-white/75 hover:text-tuerkis transition-colors">Kontakt</a></li>
-              <li><a href="#datenschutz" className="text-white/75 hover:text-tuerkis transition-colors">Datenschutz</a></li>
+              <li><Link to="/#services" className="text-white/75 hover:text-tuerkis transition-colors">Leistungen</Link></li>
+              <li><Link to="/#about" className="text-white/75 hover:text-tuerkis transition-colors">Über uns</Link></li>
+              <li><Link to="/#contact" className="text-white/75 hover:text-tuerkis transition-colors">Kontakt</Link></li>
             </ul>
           </div>
 
@@ -41,8 +41,8 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold text-sm mb-16 text-white">Rechtliches</h4>
             <ul className="space-y-8 text-sm">
-              <li><a href="#datenschutz" className="text-white/75 hover:text-tuerkis transition-colors">Datenschutz</a></li>
-              <li><a href="#impressum" className="text-white/75 hover:text-tuerkis transition-colors">Impressum</a></li>
+              <li><Link to="/datenschutz" className="text-white/75 hover:text-tuerkis transition-colors">Datenschutz</Link></li>
+              <li><Link to="/impressum" className="text-white/75 hover:text-tuerkis transition-colors">Impressum</Link></li>
             </ul>
           </div>
 
@@ -52,13 +52,13 @@ export const Footer: React.FC = () => {
             <ul className="space-y-12 text-sm">
               <li>
                 <p className="text-white/50 text-xs mb-4 uppercase tracking-widest">Telefon</p>
-                <a href="tel:+49123456789" className="text-white/75 hover:text-tuerkis transition-colors font-medium">
+                <a href={company.contact.phoneHref} className="text-white/75 hover:text-tuerkis transition-colors font-medium">
                   {company.contact.phone}
                 </a>
               </li>
               <li>
                 <p className="text-white/50 text-xs mb-4 uppercase tracking-widest">E-Mail</p>
-                <a href="mailto:info@classic-glanz.de" className="text-white/75 hover:text-tuerkis transition-colors font-medium">
+                <a href={company.contact.emailHref} className="text-white/75 hover:text-tuerkis transition-colors font-medium">
                   {company.contact.email}
                 </a>
               </li>

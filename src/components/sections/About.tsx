@@ -9,7 +9,7 @@ export const About: React.FC = () => {
           {/* Text Content */}
           <div>
             <span className="subline">Über Classic Glanz</span>
-            <h2 className="font-display text-4xl md:text-5xl text-navy mb-32">
+            <h2 className="font-display text-3xl md:text-5xl text-navy mb-32">
               Sauberkeit, auf die Sie sich verlassen können
             </h2>
 

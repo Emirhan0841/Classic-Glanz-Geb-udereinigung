@@ -2,8 +2,11 @@ import React from 'react'
 import { Container } from '../ui/Container'
 import { Button } from '../ui/Button'
 import { company } from '../../data/company'
+import { useNavigate } from 'react-router-dom'
 
 export const Hero: React.FC = () => {
+  const navigate = useNavigate()
+
   return (
     <section id="home" className="relative overflow-hidden bg-white">
       <Container className="grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-48 md:gap-64 items-center py-48 md:py-64">
@@ -17,10 +20,10 @@ export const Hero: React.FC = () => {
             {company.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-12 max-w-sm">
-            <Button variant="primary" size="lg">
+            <Button variant="primary" size="lg" onClick={() => navigate('/#contact')}>
               Angebot anfragen
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={() => navigate('/#services')}>
               Leistungen
             </Button>
           </div>

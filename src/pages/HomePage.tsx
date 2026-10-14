@@ -1,0 +1,28 @@
+import React, { useEffect } from 'react'
+import { Trust } from '../components/sections/Trust'
+import { Hero } from '../components/sections/Hero'
+import { Services } from '../components/sections/Services'
+import { About } from '../components/sections/About'
+import { Why } from '../components/sections/Why'
+import { Process } from '../components/sections/Process'
+import { CTA } from '../components/sections/CTA'
+import { Contact } from '../components/sections/Contact'
+
+export const HomePage: React.FC = () => {
+  useEffect(() => {
+    document.title = 'Classic Glanz | Professionelle Gebäudereinigung Karlsruhe'
+  }, [])
+
+  return (
+    <>
+      <Hero />
+      <Trust />
+      <Services />
+      <About />
+      <Why />
+      <Process />
+      <CTA />
+      <Contact />
+    </>
+  )
+}

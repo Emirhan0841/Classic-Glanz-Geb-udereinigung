@@ -30,7 +30,7 @@ export const Why: React.FC = () => {
     <section className="bg-white">
       <Container className="section-spacing">
         <span className="subline">Vorteile</span>
-        <h2 className="font-display text-4xl md:text-5xl text-navy mb-64">
+        <h2 className="font-display text-3xl md:text-5xl text-navy mb-64">
           Warum Sie uns wählen sollten
         </h2>
 
@@ -42,7 +42,7 @@ export const Why: React.FC = () => {
                   <Icon name={advantage.icon} size={24} className="text-tuerkis" />
                 </div>
               </div>
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-lg text-navy mb-12">
                   {advantage.title}
                 </h3>
