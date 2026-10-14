@@ -8,6 +8,7 @@ import { Why } from './components/sections/Why'
 import { Process } from './components/sections/Process'
 import { CTA } from './components/sections/CTA'
 import { Contact } from './components/sections/Contact'
+import { Legal } from './components/sections/Legal'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Process />
         <CTA />
         <Contact />
+        <Legal />
       </main>
       <Footer />
     </div>

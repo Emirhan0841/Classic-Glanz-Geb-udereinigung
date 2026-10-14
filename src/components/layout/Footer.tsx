@@ -43,7 +43,6 @@ export const Footer: React.FC = () => {
             <ul className="space-y-8 text-sm">
               <li><a href="#datenschutz" className="text-white/75 hover:text-tuerkis transition-colors">Datenschutz</a></li>
               <li><a href="#impressum" className="text-white/75 hover:text-tuerkis transition-colors">Impressum</a></li>
-              <li><a href="#agb" className="text-white/75 hover:text-tuerkis transition-colors">AGB</a></li>
             </ul>
           </div>
 
