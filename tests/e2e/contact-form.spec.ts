@@ -154,11 +154,11 @@ test.describe('Kontaktformular', () => {
     expect(dialogs[0]).toContain('konnte nicht gesendet werden')
   })
 
-  test('Honeypot-Feld ist im versteckten Netlify-Formular vorhanden', async ({ page }) => {
-    // Das statische Formular in index.html dient nur der Netlify-Erkennung beim Build
-    const hidden = page.locator('form[name="contact"][data-netlify="true"]').first()
+  test('Verstecktes Netlify-Formular ist im Markup vorhanden', async ({ page }) => {
+    // Das statische Formular in index.html dient nur der Netlify-Erkennung beim Build.
+    // Netlify schreibt es beim Deploy um (Honeypot-Attribut wird entfernt), daher nur Name und hidden prüfen.
+    const hidden = page.locator('form[name="contact"][hidden]')
     await expect(hidden).toHaveCount(1)
-    await expect(hidden).toHaveAttribute('data-netlify-honeypot', 'bot-field')
     await expect(hidden).toBeHidden()
   })
 

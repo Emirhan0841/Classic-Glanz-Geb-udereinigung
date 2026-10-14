@@ -11,7 +11,8 @@ export default defineConfig({
   reporter: [['list'], ['html', { open: 'never' }]],
   outputDir: 'test-results',
   use: {
-    baseURL: `http://localhost:${PORT}`,
+    // BASE_URL setzt eine laufende Umgebung (z. B. Netlify-Vorschau) statt des lokalen Builds
+    baseURL: process.env.BASE_URL ?? `http://localhost:${PORT}`,
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
   },
@@ -21,7 +22,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
   ],
-  webServer: {
+  webServer: process.env.BASE_URL ? undefined : {
     command: `npm run build && npx vite preview --port ${PORT} --strictPort`,
     url: `http://localhost:${PORT}`,
     reuseExistingServer: false, // immer frisch bauen, sonst laufen Tests gegen veralteten Build
