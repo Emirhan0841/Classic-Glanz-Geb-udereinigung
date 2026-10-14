@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
 import { ScrollToHash } from './components/layout/ScrollToHash'
+import { PreviewBanner } from './components/layout/PreviewBanner'
 import { HomePage } from './pages/HomePage'
 import { ImpressumPage } from './pages/ImpressumPage'
 import { DatenschutzPage } from './pages/DatenschutzPage'
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="min-h-screen bg-background">
       <ScrollToHash />
+      <PreviewBanner />
       <Header />
       <main>
         <Routes>

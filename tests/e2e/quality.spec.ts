@@ -49,6 +49,11 @@ test.describe('Technische Qualität', () => {
     expect(missing).toEqual([])
   })
 
+  test('Vorschau ist für Suchmaschinen gesperrt (noindex, nofollow)', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow')
+  })
+
   test('Dokument hat Sprache, Titel und genau eine h1', async ({ page }) => {
     await page.goto('/')
     await expect(page.locator('html')).toHaveAttribute('lang', 'de')

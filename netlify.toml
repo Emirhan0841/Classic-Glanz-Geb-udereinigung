@@ -4,9 +4,17 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  # Vorschau-Kennzeichnung. Vor der Domain-Verbindung entfernen (siehe README).
+  VITE_SITE_STATUS = "preview"
 
 # SPA: alle Pfade auf index.html leiten (Anker-Navigation bleibt clientseitig)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Vorschau nicht in Suchmaschinen aufnehmen. Vor Livegang entfernen.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

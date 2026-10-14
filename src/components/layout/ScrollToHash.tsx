@@ -7,20 +7,29 @@ export const ScrollToHash = () => {
   const { pathname, hash, key } = useLocation()
 
   useEffect(() => {
-    if (hash) {
-      document.getElementById(hash.slice(1))?.scrollIntoView()
-    } else {
+    if (!hash) {
       window.scrollTo(0, 0)
+      return
+    }
+    const scrollToTarget = () => document.getElementById(hash.slice(1))?.scrollIntoView()
+    scrollToTarget()
+    // Webfonts verschieben das Layout nach dem ersten Scroll. Deshalb nachjustieren,
+    // solange der Anker noch aktuell ist.
+    let stillCurrent = true
+    document.fonts?.ready.then(() => {
+      if (stillCurrent && window.location.hash === hash) scrollToTarget()
+    })
+    return () => {
+      stillCurrent = false
     }
   }, [pathname, hash, key])
 
-  // Beim direkten Aufruf (/#services) verschiebt sich das Layout nach dem Laden durch Webfonts.
-  // Deshalb nochmals zum Anker springen, sobald Seite und Schriften geladen sind.
+  // Beim direkten Aufruf (/#services) verschiebt sich das Layout nach dem vollständigen Laden.
+  // Deshalb nochmals zum Anker springen, sobald die Seite geladen ist.
   useEffect(() => {
     if (!window.location.hash) return
     const scrollToHash = () => document.getElementById(window.location.hash.slice(1))?.scrollIntoView()
     window.addEventListener('load', scrollToHash)
-    document.fonts?.ready.then(scrollToHash)
     return () => window.removeEventListener('load', scrollToHash)
   }, [])
 
