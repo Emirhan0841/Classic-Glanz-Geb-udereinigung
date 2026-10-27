@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container } from '../ui/Container'
 import { services } from '../../data/services'
+import { additionalServices } from '../../data/additionalServices'
+import { Icon } from '../ui/Icon'
 
 const serviceImages: Record<string, string> = {
   gebaudereinigung: '/classic-glanz-images/services/service-building-cleaning.webp',
@@ -9,6 +11,8 @@ const serviceImages: Record<string, string> = {
   unterhaltsreinigung: '/classic-glanz-images/services/service-maintenance-cleaning.webp',
   hochdruckreinigung: '/classic-glanz-images/services/service-pressure-washing.webp',
   winterdienst: '/classic-glanz-images/services/service-winter-service.webp',
+  entrumpelung: '/classic-glanz-images/services/service-clearance.webp',
+  hausmeisterservice: '/classic-glanz-images/services/service-caretaker.webp',
 }
 
 export const Services: React.FC = () => {
@@ -57,6 +61,28 @@ export const Services: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Weitere Reinigungsleistungen – kompakte Kacheln */}
+        <div className="mt-64 pt-48 border-t border-border">
+          <h3 className="text-base md:text-lg font-semibold text-navy mb-16">
+            Weitere Reinigungsleistungen
+          </h3>
+          <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+            {additionalServices.map((service) => (
+              <li
+                key={service.id}
+                className="flex items-center gap-12 rounded-sm border border-border bg-white px-12 py-12 hover:border-tuerkis transition-colors"
+              >
+                <span className="flex-shrink-0 flex items-center justify-center w-32 h-32 rounded-full bg-muted text-petrol">
+                  <Icon name={service.icon} size={16} />
+                </span>
+                <span className="text-sm text-foreground leading-snug break-words min-w-0">
+                  {service.title}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </Container>
     </section>

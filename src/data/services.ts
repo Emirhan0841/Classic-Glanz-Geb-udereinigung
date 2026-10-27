@@ -37,4 +37,16 @@ export const services: Service[] = [
     description: 'Zuverlässige Schnee- und Eisbeseitigung sowie Streudienst für sichere Wege und Zufahrten.',
     icon: 'snowflake',
   },
+  {
+    id: 'entrumpelung',
+    title: 'Entrümpelung',
+    description: 'Professionelle Entrümpelung von Wohnungen, Häusern, Kellern und Gewerberäumen – schnell, gründlich und zuverlässig.',
+    icon: 'trash-2',
+  },
+  {
+    id: 'hausmeisterservice',
+    title: 'Hausmeisterservice',
+    description: 'Zuverlässige Betreuung und Pflege von Immobilien, Außenanlagen und technischen Einrichtungen aus einer Hand.',
+    icon: 'wrench',
+  },
 ]
