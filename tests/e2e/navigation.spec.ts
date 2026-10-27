@@ -32,7 +32,7 @@ test.describe('Desktop-Navigation', () => {
     const links = await nav.locator('a').evaluateAll((els) =>
       els.map((a) => ({ label: a.textContent?.trim(), href: a.getAttribute('href') })),
     )
-    expect(links.map((l) => l.label)).toEqual(['Startseite', 'Leistungen', 'Über uns', 'Ablauf', 'Kontakt'])
+    expect(links.map((l) => l.label)).toEqual(['Leistungen', 'Über uns', 'Ablauf', 'Kontakt'])
 
     for (const link of links) {
       await nav.getByRole('link', { name: link.label!, exact: true }).click()
@@ -114,7 +114,7 @@ test.describe('Mobile-Navigation', () => {
   test('Mobile Menü enthält alle Navigationspunkte und den CTA', async ({ page }) => {
     await page.goto('/')
     await page.locator('header button[aria-expanded]').click()
-    for (const label of ['Startseite', 'Leistungen', 'Über uns', 'Ablauf', 'Kontakt']) {
+    for (const label of ['Leistungen', 'Über uns', 'Ablauf', 'Kontakt']) {
       await expect(page.locator('header').getByRole('link', { name: label, exact: true })).toBeVisible()
     }
     await expect(page.locator('header').getByRole('button', { name: 'Angebot anfragen' })).toBeVisible()
