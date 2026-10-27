@@ -68,16 +68,16 @@ export const Services: React.FC = () => {
           <h3 className="text-base md:text-lg font-semibold text-navy mb-16">
             Weitere Reinigungsleistungen
           </h3>
-          <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {additionalServices.map((service) => (
               <li
                 key={service.id}
-                className="flex items-center gap-12 rounded-sm border border-border bg-white px-12 py-12 hover:border-tuerkis transition-colors"
+                className="flex items-center gap-12 min-w-0 rounded-sm border border-border bg-white px-12 py-12 hover:border-tuerkis transition-colors"
               >
                 <span className="flex-shrink-0 flex items-center justify-center w-32 h-32 rounded-full bg-muted text-petrol">
                   <Icon name={service.icon} size={16} />
                 </span>
-                <span className="text-sm text-foreground leading-snug break-words min-w-0">
+                <span className="text-sm text-foreground leading-snug [word-break:normal] [overflow-wrap:normal] min-w-0">
                   {service.title}
                 </span>
               </li>
