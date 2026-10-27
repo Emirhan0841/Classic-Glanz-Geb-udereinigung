@@ -5,7 +5,7 @@ import { additionalServices } from '../../data/additionalServices'
 import { Icon } from '../ui/Icon'
 
 const serviceImages: Record<string, string> = {
-  gebaudereinigung: '/classic-glanz-images/services/service-building-cleaning.webp',
+  bauendreinigung: '/classic-glanz-images/services/service-building-cleaning.webp',
   fensterreinigung: '/classic-glanz-images/services/service-window-cleaning.webp',
   grundreinigung: '/classic-glanz-images/services/service-deep-cleaning.webp',
   unterhaltsreinigung: '/classic-glanz-images/services/service-maintenance-cleaning.webp',

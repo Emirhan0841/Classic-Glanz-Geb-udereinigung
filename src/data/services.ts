@@ -2,14 +2,14 @@ import type { Service } from '../types'
 
 export const services: Service[] = [
   {
-    id: 'gebaudereinigung',
-    title: 'Gebäudereinigung',
-    description: 'Professionelle Reinigung und Pflege von privaten, gewerblichen und öffentlichen Gebäuden.',
-    icon: 'building-2',
+    id: 'unterhaltsreinigung',
+    title: 'Unterhaltsreinigung',
+    description: 'Regelmäßige Reinigung von Büros, Geschäftsräumen und anderen Objekten nach individuellem Plan.',
+    icon: 'briefcase',
   },
   {
     id: 'fensterreinigung',
-    title: 'Fenster- & Glasreinigung',
+    title: 'Fenster- und Glasreinigung',
     description: 'Streifenfreie Reinigung von Fenstern, Glasflächen und Glasfassaden für strahlende Transparenz.',
     icon: 'glass-water',
   },
@@ -20,27 +20,21 @@ export const services: Service[] = [
     icon: 'sparkles',
   },
   {
-    id: 'unterhaltsreinigung',
-    title: 'Unterhaltsreinigung',
-    description: 'Regelmäßige Reinigung von Büros, Geschäftsräumen und anderen Objekten nach individuellem Plan.',
-    icon: 'briefcase',
-  },
-  {
     id: 'hochdruckreinigung',
-    title: 'Hochdruckreinigung',
+    title: 'Hochdruck- und Außenflächenreinigung',
     description: 'Gründliche Reinigung von Terrassen, Einfahrten, Gehwegen und Außenflächen mit Hochdruck.',
     icon: 'zap',
   },
   {
-    id: 'winterdienst',
-    title: 'Winterdienst',
-    description: 'Zuverlässige Schnee- und Eisbeseitigung sowie Streudienst für sichere Wege und Zufahrten.',
-    icon: 'snowflake',
+    id: 'bauendreinigung',
+    title: 'Bau- und Bauendreinigung',
+    description: 'Gründliche Reinigung von Baustellen und Neubauten – von der Grobreinigung bis zur übergabefertigen Endreinigung.',
+    icon: 'hammer',
   },
   {
     id: 'entrumpelung',
-    title: 'Entrümpelung',
-    description: 'Professionelle Entrümpelung von Wohnungen, Häusern, Kellern und Gewerberäumen – schnell, gründlich und zuverlässig.',
+    title: 'Entrümpelung und Haushaltsauflösung',
+    description: 'Professionelle Entrümpelung und Haushaltsauflösung von Wohnungen, Häusern, Kellern und Gewerberäumen – schnell, gründlich und zuverlässig.',
     icon: 'trash-2',
   },
   {
@@ -48,5 +42,11 @@ export const services: Service[] = [
     title: 'Hausmeisterservice',
     description: 'Zuverlässige Betreuung und Pflege von Immobilien, Außenanlagen und technischen Einrichtungen aus einer Hand.',
     icon: 'wrench',
+  },
+  {
+    id: 'winterdienst',
+    title: 'Winterdienst',
+    description: 'Zuverlässige Schnee- und Eisbeseitigung sowie Streudienst für sichere Wege und Zufahrten.',
+    icon: 'snowflake',
   },
 ]

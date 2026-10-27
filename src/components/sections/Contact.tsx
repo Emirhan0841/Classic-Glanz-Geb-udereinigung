@@ -159,11 +159,13 @@ export const Contact: React.FC = () => {
                 className="w-full px-16 py-12 border-2 border-tuerkis/30 rounded-md text-navy focus:outline-none focus:border-petrol transition-all bg-white"
               >
                 <option value="">-- Bitte wählen --</option>
-                <option value="gebaudereinigung">Gebäudereinigung</option>
-                <option value="fensterreinigung">Fenster- & Glasreinigung</option>
-                <option value="grundreinigung">Grundreinigung</option>
                 <option value="unterhaltsreinigung">Unterhaltsreinigung</option>
-                <option value="hochdruckreinigung">Hochdruckreinigung</option>
+                <option value="fensterreinigung">Fenster- und Glasreinigung</option>
+                <option value="grundreinigung">Grundreinigung</option>
+                <option value="hochdruckreinigung">Hochdruck- und Außenflächenreinigung</option>
+                <option value="bauendreinigung">Bau- und Bauendreinigung</option>
+                <option value="entrumpelung">Entrümpelung und Haushaltsauflösung</option>
+                <option value="hausmeisterservice">Hausmeisterservice</option>
                 <option value="winterdienst">Winterdienst</option>
               </select>
             </div>
