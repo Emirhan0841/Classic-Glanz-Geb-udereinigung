@@ -62,14 +62,16 @@ test.describe('Kontaktformular', () => {
     const options = await page.locator('#service option').allTextContents()
     expect(options).toEqual([
       '-- Bitte wählen --',
-      'Gebäudereinigung',
-      'Fenster- & Glasreinigung',
-      'Grundreinigung',
       'Unterhaltsreinigung',
-      'Hochdruckreinigung',
+      'Fenster- und Glasreinigung',
+      'Grundreinigung',
+      'Hochdruck- und Außenflächenreinigung',
+      'Bau- und Bauendreinigung',
+      'Entrümpelung und Haushaltsauflösung',
+      'Hausmeisterservice',
       'Winterdienst',
     ])
-    for (const value of ['gebaudereinigung', 'winterdienst', 'hochdruckreinigung']) {
+    for (const value of ['bauendreinigung', 'winterdienst', 'hausmeisterservice']) {
       await page.selectOption('#service', value)
       await expect(page.locator('#service')).toHaveValue(value)
     }

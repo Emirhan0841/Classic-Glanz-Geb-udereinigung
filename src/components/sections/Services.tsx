@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from '../ui/Container'
 import { services } from '../../data/services'
 import { additionalServices } from '../../data/additionalServices'
@@ -13,6 +13,27 @@ const serviceImages: Record<string, string> = {
   winterdienst: '/classic-glanz-images/services/service-winter-service.webp',
   entrumpelung: '/classic-glanz-images/services/service-clearance.webp',
   hausmeisterservice: '/classic-glanz-images/services/service-caretaker.webp',
+}
+
+// Fehlendes Bild: neutrale Fläche statt kaputtem Bildsymbol oder sichtbarem Alt-Text
+const ServiceImage: React.FC<{ src?: string; alt: string }> = ({ src, alt }) => {
+  const [failed, setFailed] = useState(false)
+
+  return (
+    <div className="w-full xl:w-40 flex-shrink-0 aspect-[16/10] xl:aspect-[4/3] rounded-md overflow-hidden bg-muted">
+      {src && !failed ? (
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-full object-cover"
+          loading="lazy"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <span aria-hidden="true" className="block w-full h-full" />
+      )}
+    </div>
+  )
 }
 
 export const Services: React.FC = () => {
@@ -30,31 +51,23 @@ export const Services: React.FC = () => {
         </div>
 
         {/* Services Grid – 2 Spalten */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-48 md:gap-64">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-48 md:gap-64">
           {services.map((service) => (
             <div
               key={service.id}
-              className="group border-l-4 border-tuerkis pl-24 py-12 hover:border-petrol transition-colors"
+              className="group border-l-4 border-tuerkis pl-16 md:pl-24 py-12 hover:border-petrol transition-colors min-w-0"
             >
-              <div className="flex gap-24 items-start">
+              {/* Bild oben, Text darunter. Ab xl: Bild links, Text rechts (genug Textbreite für lange Wörter) */}
+              <div className="flex flex-col gap-16 xl:flex-row xl:gap-24 xl:items-start min-w-0">
                 {/* Service Image */}
-                <div className="flex-shrink-0">
-                  <div className="w-80 h-80 md:w-40 md:h-40 lg:w-56 lg:h-56 rounded-md overflow-hidden bg-muted">
-                    <img
-                      src={serviceImages[service.id]}
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
+                <ServiceImage src={serviceImages[service.id]} alt={service.title} />
 
                 {/* Service Text */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-semibold mb-8 text-navy group-hover:text-petrol transition-colors break-words">
+                  <h3 className="text-base md:text-lg font-semibold mb-8 text-navy group-hover:text-petrol transition-colors hyphens-none [word-break:normal] [overflow-wrap:normal]">
                     {service.title}
                   </h3>
-                  <p className="text-sm md:text-base text-foreground leading-relaxed">
+                  <p className="text-sm md:text-base text-foreground leading-relaxed [word-break:normal] [overflow-wrap:normal]">
                     {service.description}
                   </p>
                 </div>
