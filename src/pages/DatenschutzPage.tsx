@@ -11,14 +11,14 @@ export const DatenschutzPage: React.FC = () => (
   <LegalPageLayout title="Datenschutzerklärung">
     <p>
       Diese Datenschutzerklärung informiert, welche personenbezogenen Daten beim Besuch dieser Website
-      verarbeitet werden. <Todo>Stand-Datum eintragen</Todo>
+      verarbeitet werden. Stand: 02.11.2026
     </p>
 
     <H>1. Verantwortliche Stelle</H>
     <p>
       {company.name}, Inhaber {company.owner}
       <br />
-      {company.address.street}, {company.address.zip} {company.address.city}
+      Anschrift: siehe <a href="/impressum">Impressum</a>
       <br />
       E-Mail: <a href={company.contact.emailHref}>{company.contact.email}</a>
       <br />
@@ -33,17 +33,16 @@ export const DatenschutzPage: React.FC = () => (
     </p>
     <p>
       Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb).
-      Speicherdauer der Server-Protokolle: <Todo>Aufbewahrungsfrist bei Netlify prüfen und hier nennen</Todo>
+      Speicherdauer der Server-Protokolle: <Todo>Aufbewahrungsfrist der Server-Logs bei Netlify prüfen und hier nennen</Todo>
     </p>
 
     <H>3. Hosting bei Netlify</H>
     <p>
-      Diese Website wird bei Netlify, Inc. (USA) gehostet. Netlify verarbeitet die oben genannten Daten als
-      Auftragsverarbeiter. <Todo>Auftragsverarbeitungsvertrag (AVV) bei Netlify abschließen bzw. bestätigen</Todo>
+      Diese Website wird bei Netlify, Inc. (USA) gehostet. Netlify verarbeitet die oben genannten Daten im
+      Auftrag des Betreibers. <Todo>Abschluss eines Auftragsverarbeitungsvertrags (AVV) mit Netlify bestätigen</Todo>
     </p>
     <p>
-      Drittlandtransfer: Die Verarbeitung kann in den USA stattfinden. Grundlage ist
-      <Todo>EU-US Data Privacy Framework bzw. Standardvertragsklauseln – Netlify-Zertifizierung prüfen</Todo>
+      Drittlandtransfer: <Todo>Angabe zu einer Übermittlung in Drittländer und der Grundlage dafür prüfen und eintragen</Todo>
     </p>
 
     <H>4. Kontaktformular</H>
@@ -54,17 +53,18 @@ export const DatenschutzPage: React.FC = () => (
     </p>
     <p>
       Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen auf Ihre Anfrage hin).
-      Die Einsendungen werden über Netlify Forms gespeichert und können per E-Mail an uns weitergeleitet werden.
-      <Todo>E-Mail-Benachrichtigung in Netlify einrichten und Empfängeradresse bestätigen</Todo>
+      Die Einsendungen werden über Netlify Forms gespeichert. Benachrichtigungen über neue Einsendungen
+      gehen per E-Mail an {company.contact.email}.
     </p>
     <p>
-      Speicherdauer: <Todo>Löschfrist festlegen, z. B. Löschung nach Abschluss der Anfrage</Todo>
+      Speicherdauer: Kontaktanfragen werden nach 6 Monaten gelöscht, sofern keine gesetzlichen
+      Aufbewahrungspflichten oder laufenden Vorgänge entgegenstehen.
     </p>
 
     <H>5. Cookies und Speicherung im Browser</H>
     <p>
-      Diese Website verwendet keine Cookies und speichert keine Daten im lokalen Speicher Ihres Browsers.
-      Eine Einwilligung ist dafür nicht erforderlich.
+      Diese Website verwendet keine Cookies und keine Tracking-Dienste. Nach Klick auf „Verstanden“ im
+      Cookie-Hinweis wird nur diese Hinweis-Auswahl im lokalen Speicher (localStorage) Ihres Browsers gespeichert.
     </p>
 
     <H>6. Externe Dienste</H>

@@ -63,9 +63,9 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <p className="text-white/50 text-xs mb-4 uppercase tracking-widest">Adresse</p>
+                <p className="text-white/50 text-xs mb-4 uppercase tracking-widest">Standort</p>
                 <p className="text-white/75 font-medium">
-                  {company.contact.address}
+                  Karlsruhe und Umgebung
                 </p>
               </li>
             </ul>

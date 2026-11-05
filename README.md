@@ -404,7 +404,7 @@ npm run preview       # Lokaler Preview des Builds
 
 ## 📞 Kontakt & Support
 
-Für Fragen zum Code oder Design: [support@classic-glanz.de](mailto:support@classic-glanz.de)
+Für Fragen zum Code oder Design: [info@classic-glanz-gebäudereinigung.de](mailto:info@xn--classic-glanz-gebudereinigung-hqc.de)
 
 ---
 

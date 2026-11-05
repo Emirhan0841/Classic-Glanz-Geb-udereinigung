@@ -3,6 +3,8 @@ export const company = {
   name: 'Classic Glanz Gebäudereinigung',
   owner: 'Görkem Cici',
   tagline: 'Professionelle Gebäudereinigung in Karlsruhe',
+  // Punycode-Form der Domain, für Canonical-URLs, Sitemap und Metadaten
+  website: 'https://xn--classic-glanz-gebudereinigung-hqc.de',
   description: 'Zuverlässige Reinigung für Büros, Gewerbe und Privathaushalte in Karlsruhe und Umgebung.',
   address: {
     street: 'Franz-Luststraße 20',
@@ -16,7 +18,6 @@ export const company = {
     email: 'info@classic-glanz-gebäudereinigung.de',
     // Punycode-Form für mailto:, damit Mail-Programme die Domain sicher auflösen
     emailHref: 'mailto:info@xn--classic-glanz-gebudereinigung-hqc.de',
-    address: 'Franz-Luststraße 20, 76185 Karlsruhe',
   },
   regions: ['Karlsruhe', 'Umgebung'],
 }

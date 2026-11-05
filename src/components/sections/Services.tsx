@@ -10,9 +10,7 @@ const serviceImages: Record<string, string> = {
   grundreinigung: '/classic-glanz-images/services/service-deep-cleaning.webp',
   unterhaltsreinigung: '/classic-glanz-images/services/service-maintenance-cleaning.webp',
   hochdruckreinigung: '/classic-glanz-images/services/service-pressure-washing.webp',
-  winterdienst: '/classic-glanz-images/services/service-winter-service.webp',
-  entrumpelung: '/classic-glanz-images/services/service-clearance.webp',
-  hausmeisterservice: '/classic-glanz-images/services/service-caretaker.webp',
+  hausmeisterservice: '/classic-glanz-images/services/service-winter-service.webp',
 }
 
 // Fehlendes Bild: neutrale Fläche statt kaputtem Bildsymbol oder sichtbarem Alt-Text

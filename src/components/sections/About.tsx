@@ -15,7 +15,7 @@ export const About: React.FC = () => {
 
             <div className="space-y-24">
               <p className="text-base md:text-lg text-foreground leading-relaxed">
-                Seit Jahren vertrauen Privatkunden, Büros und Gewerbekunden in Karlsruhe und Umgebung auf unsere professionelle Gebäudereinigung. Wir verstehen, dass Sauberkeit nicht verhandelbar ist.
+                Wir sind für Privatkunden, Büros und Gewerbekunden in Karlsruhe und Umgebung da – mit professioneller Gebäudereinigung. Wir verstehen, dass Sauberkeit nicht verhandelbar ist.
               </p>
 
               <div className="space-y-24">

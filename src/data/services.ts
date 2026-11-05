@@ -32,21 +32,9 @@ export const services: Service[] = [
     icon: 'hammer',
   },
   {
-    id: 'entrumpelung',
-    title: 'Entrümpelung und Haushaltsauflösung',
-    description: 'Professionelle Entrümpelung und Haushaltsauflösung von Wohnungen, Häusern, Kellern und Gewerberäumen – schnell, gründlich und zuverlässig.',
-    icon: 'trash-2',
-  },
-  {
     id: 'hausmeisterservice',
-    title: 'Hausmeisterservice',
-    description: 'Zuverlässige Betreuung und Pflege von Immobilien, Außenanlagen und technischen Einrichtungen aus einer Hand.',
+    title: 'Hausmeisterservice & Winterdienst',
+    description: 'Zuverlässige Betreuung und Pflege von Immobilien und Außenanlagen sowie professioneller Winterdienst mit Schnee- und Eisbeseitigung.',
     icon: 'wrench',
-  },
-  {
-    id: 'winterdienst',
-    title: 'Winterdienst',
-    description: 'Zuverlässige Schnee- und Eisbeseitigung sowie Streudienst für sichere Wege und Zufahrten.',
-    icon: 'snowflake',
   },
 ]

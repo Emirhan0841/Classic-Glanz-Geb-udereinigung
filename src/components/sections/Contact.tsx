@@ -164,9 +164,7 @@ export const Contact: React.FC = () => {
                 <option value="grundreinigung">Grundreinigung</option>
                 <option value="hochdruckreinigung">Hochdruck- und Außenflächenreinigung</option>
                 <option value="bauendreinigung">Bau- und Bauendreinigung</option>
-                <option value="entrumpelung">Entrümpelung und Haushaltsauflösung</option>
-                <option value="hausmeisterservice">Hausmeisterservice</option>
-                <option value="winterdienst">Winterdienst</option>
+                <option value="hausmeisterservice">Hausmeisterservice &amp; Winterdienst</option>
               </select>
             </div>
 

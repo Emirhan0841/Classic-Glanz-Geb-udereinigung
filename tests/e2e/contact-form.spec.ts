@@ -67,11 +67,9 @@ test.describe('Kontaktformular', () => {
       'Grundreinigung',
       'Hochdruck- und Außenflächenreinigung',
       'Bau- und Bauendreinigung',
-      'Entrümpelung und Haushaltsauflösung',
-      'Hausmeisterservice',
-      'Winterdienst',
+      'Hausmeisterservice & Winterdienst',
     ])
-    for (const value of ['bauendreinigung', 'winterdienst', 'hausmeisterservice']) {
+    for (const value of ['bauendreinigung', 'hausmeisterservice']) {
       await page.selectOption('#service', value)
       await expect(page.locator('#service')).toHaveValue(value)
     }

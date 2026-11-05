@@ -34,10 +34,8 @@ export const ImpressumPage: React.FC = () => (
     </div>
 
     <div>
-      <h3 className="font-semibold text-lg md:text-2xl text-navy mb-8">Rechtsform und Registrierung</h3>
-      <p>
-        <Todo>Rechtsform (z. B. Einzelunternehmen) und ggf. Registereintrag (Handelsregister, Nummer) angeben</Todo>
-      </p>
+      <h3 className="font-semibold text-lg md:text-2xl text-navy mb-8">Rechtsform</h3>
+      <p>Einzelunternehmen</p>
     </div>
 
     <div>
@@ -51,8 +49,8 @@ export const ImpressumPage: React.FC = () => (
       <h3 className="font-semibold text-lg md:text-2xl text-navy mb-8">Berufsrechtliche Angaben</h3>
       <p>
         <Todo>
-          Gebäudereinigung ist ein Handwerk: Handwerksrolle bzw. Handwerkskammer, Gewerbeanmeldung
-          und zuständige Aufsichtsbehörde prüfen und ggf. angeben
+          Gewerbeanmeldung: Betriebsart Handwerk. Eintragung in die Handwerksrolle bei der zuständigen
+          Handwerkskammer (vermutlich Handwerkskammer Karlsruhe) bestätigen und Handwerksrollen-Nummer angeben
         </Todo>
       </p>
     </div>
